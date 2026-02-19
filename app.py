@@ -57,7 +57,7 @@ def preprocess_vgg(image):
 
 
 # Завантаження зображення
-uploaded_file = st.file_uploader("Завантажте зображення", type=["jpg", "png"])
+uploaded_file = st.file_uploader("Завантажте зображення", type=["jpg", "png", "jpeg"])
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
