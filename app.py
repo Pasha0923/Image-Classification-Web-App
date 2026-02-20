@@ -18,7 +18,7 @@ if model_option == "CNN":
     history = np.load("history_cnn.npy", allow_pickle=True).item()
 else:
 # Завантаження моделі VGG16 і history
-    model = load_model("VGG16_for_app.keras", compile=False)
+    model = load_model("VGG16_for_app.keras")
     history = np.load("history_vgg_for_app.npy", allow_pickle=True).item()
 
 # Вивід графіків
