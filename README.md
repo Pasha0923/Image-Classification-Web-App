@@ -2,10 +2,11 @@
 
 A web application for image classification using Convolutional Neural Networks (CNN) and transfer learning with VGG16.
 
-The application allows users to upload an image and receive:
-- Predicted class
-- Class probabilities
-- Training accuracy and loss graphs
+The application :
+- Processes user-uploaded images and adapts them to model-specific input requirements
+- Performs real-time inference using CNN and transfer learning (VGG16)
+- Outputs predicted class along with full probability distribution
+- Displays model perfomance metrics (training/validation accuracy and loss)
 
 Built with TensorFlow and Streamlit.
 
