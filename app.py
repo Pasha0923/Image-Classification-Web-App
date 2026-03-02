@@ -52,7 +52,7 @@ def preprocess_vgg(image):
     image = image.resize((80, 80))
     img_array = np.array(image).astype("float32") / 255.0
     img_array = np.stack([img_array]*3, axis=-1)  # (80,80,3)
-    img_array = np.expand_dims(img_array, axis=0) 
+    img_array = np.expand_dims(img_array, axis=0) # (1,80,80,3)
     return img_array
 
 
